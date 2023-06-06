@@ -1,0 +1,38 @@
+.wrapper{
+    display: flex;
+    height: 100vh;
+}
+.wrapper-left{
+    height: 100%;
+}
+.main-sidebar{
+    height: 100%;
+    width: 20%;
+    border-radius: 6px;
+    text-align: center;
+}
+.sidebar-logo{
+    height: 10%;
+    background-color: aqua;
+    border-radius: 6px;
+    text-align: center;
+}
+.sidebar-menu{
+    height: 90%;
+    text-align: center;
+    text-align: left;
+}
+.wrapper-right{
+    height: 100%;
+    flex: 80%;
+}
+.main-header{
+    height: 10%;
+    background-color:  #c8c8c8;
+    border-radius: 6px;
+}
+.main-content{
+    height: 90%;
+    background-color: cadetblue;
+    border-radius: 6px;
+}
