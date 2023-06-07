@@ -18,6 +18,9 @@
     color: #fff; /* Màu nền và màu chữ của tiêu đề cột */
     border-right: 1px solid #e8e8e8; /* Thêm đường viền phải của tiêu đề cột */
   }
+  .custom-table .ant-table-thead > tr > th::before {
+    display: none;
+  }
   
   .custom-table .ant-table-thead > tr > th:last-child {
     border-left: none; /* Xóa đường viền phải của cột cuối cùng */
@@ -38,8 +41,14 @@
   .custom-table .ant-table-thead-th {
     text-align: center;
   }
-  .form-select{
+  .form-table{
     padding: 20px;
+    background-color: #fff;
+    border-radius: 6px;
+  }
+  .form-select{
+    width: 250px;
+    margin: 20px;
   }
   .content-title {
     padding: 20px;
