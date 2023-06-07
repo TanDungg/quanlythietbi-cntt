@@ -1,7 +1,6 @@
 .wrapper{
     display: flex;
     height: 100vh;
-    font-family: Georgia, serif !important;
 }
 .wrapper-left{
     height: 100%;
@@ -30,7 +29,6 @@
 }
 .sidebar-menu{
     height: 90%;
-    font-family: Georgia, serif !important;
     text-align: left;
     background-color: white;
     color: #000;
@@ -44,17 +42,16 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 25px;
+    padding: 20px 30px;
     border-bottom: 2px solid #c8c8c8;
 }
 .header-account{
     display: flex;
-    align-items: center;
-    & .user-name{
-        margin: 10px 10px;
-    }
+    align-items: center; 
 }
-
+.user-name{
+    margin: 10px 10px
+}
 
 .main-content{
     height: 90%;

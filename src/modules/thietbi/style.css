@@ -1,0 +1,60 @@
+.custom-table {
+    max-width: 100%; /* Độ rộng tối đa của bảng */
+    overflow-x: auto; /* Tạo thanh cuộn ngang khi bảng quá rộng */
+    justify-content: center;
+  }
+  
+  .custom-table .ant-table-wrapper {
+    overflow-x: visible; /* Hiển thị nội dung bảng rộng hơn khung bảng */
+  }
+  
+  .custom-table .ant-table {
+    table-layout: fixed; /* Sử dụng bố cục bảng cố định */
+    width: 100%; /* Bảng chiếm toàn bộ khung chứa */
+  }
+  
+  .custom-table .ant-table-thead > tr > th {
+    background-color: #007bff;
+    color: #fff; /* Màu nền và màu chữ của tiêu đề cột */
+    border-right: 1px solid #e8e8e8; /* Thêm đường viền phải của tiêu đề cột */
+  }
+  
+  .custom-table .ant-table-thead > tr > th:last-child {
+    border-left: none; /* Xóa đường viền phải của cột cuối cùng */
+  }
+  
+  .custom-table .ant-table-tbody > tr > td {
+    white-space: nowrap; /* Ngăn chặn trường dữ liệu quá dài bị ngắt dòng */
+  }
+  .custom-table .ant-table-thead > tr > th {
+    border: 1px solid #e8e8e8; /* Đường viền cho tiêu đề cột */
+  }
+  
+  .custom-table .ant-table-tbody > tr > td {
+    border: 1px solid #e8e8e8; /* Đường viền cho các ô dữ liệu */
+  }
+  .custom-table .ant-table-thead .ant-table-cell,
+  .custom-table .ant-table-cell,
+  .custom-table .ant-table-thead-th {
+    text-align: center;
+  }
+  .form-select{
+    padding: 20px;
+  }
+  .content-title {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .btn-title {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  
+  .btn-title .button {
+    margin-left: 10px;
+  }
+  
+  
