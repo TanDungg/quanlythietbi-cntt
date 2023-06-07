@@ -54,8 +54,15 @@
 }
 
 .main-content{
-    height: 90%;
+    height: 85%;
     background-color: #f8f8f8;
     border-radius: 6px;
     padding: 20px;
+}
+.main-footer{
+    height: 5%;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
