@@ -26,6 +26,7 @@
 .logo{
     width: 200px;
     cursor: pointer;
+    padding: 5px;
 }
 .sidebar-menu{
     height: 90%;
