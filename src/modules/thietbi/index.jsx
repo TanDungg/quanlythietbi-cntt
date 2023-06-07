@@ -1,4 +1,4 @@
-import Danhmucthietbi from './Danhmucthietbi';
+import ListThietbi from './ListThietbi';
 import './style.css';
 import FormSelect from './FormSelect';
 import FormTitle from './FormTitle';
@@ -9,7 +9,7 @@ const Thietbi = () => {
       <FormTitle />
       <div className="form-table">
         <FormSelect />
-        <Danhmucthietbi />
+        <ListThietbi />
       </div>
     </div>
   );

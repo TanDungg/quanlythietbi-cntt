@@ -11,6 +11,10 @@ const RouterConst = createBrowserRouter([
     path: '/thiet-bi',
     element: <Thietbi />,
   },
+  {
+    path: '/danh-muc',
+    element: <Thietbi />,
+  },
 ]);
 
 export default RouterConst;

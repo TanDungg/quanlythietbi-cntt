@@ -1,10 +1,10 @@
 import { Select } from 'antd';
-import '../../modules/thietbi/style.css';
+import '../../../modules/thietbi/style.css';
 
 const SelectFirst = () => {
   return (
-    <div className="select-first">
-      <label className="label-select">Hệ thống:</label>
+    <div className="select-container">
+      <label className="label">Hệ thống:</label>
       <Select
         showSearch
         placeholder="Hệ thống"

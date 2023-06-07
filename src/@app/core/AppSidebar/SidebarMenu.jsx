@@ -2,7 +2,7 @@ import { AppstoreOutlined } from '@ant-design/icons';
 import { Menu } from 'antd';
 import { useState } from 'react';
 import MenuConst from '../../../shared/constants/MenuConst';
-import logo from '../../../public/img/logothaco.jpg';
+import logo from '../../../public/img/thaco.png';
 
 const SidebarMenu = (props) => {
   const [collapsed, setCollapsed] = useState(false);

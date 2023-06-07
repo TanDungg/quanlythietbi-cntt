@@ -1,13 +1,13 @@
-import SelectFirst from '../../shared/constants/SelectFirst';
-import SelectSecond from '../../shared/constants/SelectSecond';
+import FormSearch from '../../shared/constants/Select/FormSearch';
+import SelectFirst from '../../shared/constants/Select/SelectFirst';
+import SelectSecond from '../../shared/constants/Select/SelectSecond';
 import './style.css';
 
 const FormSelect = () => (
-  <div className="form-select">
-    <div className="select-row">
-      <SelectFirst />
-      <SelectSecond />
-    </div>
+  <div className="select-row">
+    <SelectFirst />
+    <SelectSecond />
+    <FormSearch />
   </div>
 );
 
