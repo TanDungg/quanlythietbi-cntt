@@ -1,27 +1,33 @@
 .wrapper{
     display: flex;
     height: 100vh;
+    font-family: Georgia, serif !important;
 }
 .wrapper-left{
     height: 100%;
-    flex: 20%;
+    width: auto;
 }
 .main-sidebar{
     height: 100%;
-    flex: 20%;
     border-radius: 6px;
-    text-align: center;
+    
 }
 .sidebar-logo{
     height: 10%;
-    background-color: aqua;
-    border-radius: 6px;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    padding: 20px 25px;
+}
+.logo{
+    margin-right: 5px;
+    cursor: pointer;
 }
 .sidebar-menu{
     height: 90%;
-    border-radius: 6px;
-    text-align: center;
+    font-family: Georgia, serif !important;
+    text-align: left;
+    background-color: white;
+    color: #000;
 }
 .wrapper-right{
     height: 100%;
@@ -29,11 +35,13 @@
 }
 .main-header{
     height: 10%;
-    background-color:  #c8c8c8;
-    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    padding: 20px 25px;
 }
 .main-content{
     height: 90%;
-    background-color: cadetblue;
+    background-color: #f8f8f8;
     border-radius: 6px;
+    padding: 20px;
 }

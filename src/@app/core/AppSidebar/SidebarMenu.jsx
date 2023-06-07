@@ -1,4 +1,17 @@
-import { HomeOutlined, SettingOutlined } from '@ant-design/icons';
+import {
+  AppstoreOutlined,
+  HomeOutlined,
+  ToolOutlined,
+  PieChartOutlined,
+  BarsOutlined,
+  UserOutlined,
+  LaptopOutlined,
+  BarChartOutlined,
+  BankOutlined,
+  SnippetsOutlined,
+  UserSwitchOutlined,
+  ShoppingCartOutlined,
+} from '@ant-design/icons';
 import { Menu } from 'antd';
 import { useState } from 'react';
 function getItem(label, key, icon, children, type) {
@@ -12,35 +25,40 @@ function getItem(label, key, icon, children, type) {
 }
 const items = [
   getItem('Trang chủ', 'trang-chu', <HomeOutlined />),
-  getItem('Danh mục', 'danh-muc', <SettingOutlined />, [
-    getItem('Bộ phận', 'bo-phan'),
-    getItem('Đơn vị', 'don-vi'),
-    getItem('Thiết bị', 'thiet-bi'),
-    getItem('Phòng ban', 'phong-ban'),
+  getItem('Quản lý thiết bị', 'quan-ly-thiet-bi', <PieChartOutlined />, [
+    getItem('Danh mục', 'danh-muc', <BarsOutlined />),
+    getItem('CBCNV', 'cbcnv', <UserOutlined />),
+    getItem('Thông tin thiết bị', 'thong-tin-thiet-bi', <LaptopOutlined />),
+    getItem('Kho', 'kho', <BankOutlined />),
+    getItem('Báo cáo', 'bao-cao', <SnippetsOutlined />),
   ]),
+  getItem('Bảo trì thiết bị', 'bao-tri-thiet-bi', <ToolOutlined />),
+  getItem('Hỗ trợ người dùng', 'ho-tro-nguoi-dung', <UserSwitchOutlined />),
+  getItem('Quản lý thu mua', 'quan-ly-thu-mua', <ShoppingCartOutlined />),
+  getItem('Hệ thống', 'he-thong', <BarChartOutlined />),
 ];
-const rootSubmenuKeys = ['sub1', 'sub2', 'sub4'];
 const SidebarMenu = (props) => {
-  const [openKeys, setOpenKeys] = useState(['sub1']);
-  const onOpenChange = (keys) => {
-    const latestOpenKey = keys.find((key) => openKeys.indexOf(key) === -1);
-    if (rootSubmenuKeys.indexOf(latestOpenKey) === -1) {
-      setOpenKeys(keys);
-    } else {
-      setOpenKeys(latestOpenKey ? [latestOpenKey] : []);
-    }
+  const [collapsed, setCollapsed] = useState(false);
+  const toggleCollapsed = () => {
+    setCollapsed(!collapsed);
   };
   return (
-    <Menu
-      mode="inline"
-      openKeys={openKeys}
-      onOpenChange={onOpenChange}
-      className="sidebar-menu"
-      style={{
-        textAlign: 'left',
-      }}
-      items={items}
-    />
+    <div className="main-sidebar">
+      <div className="sidebar-logo">
+        <div onClick={toggleCollapsed} className="logo">
+          {collapsed ? <AppstoreOutlined /> : <AppstoreOutlined />}
+        </div>
+        {!collapsed && <h1>THACO INDUSTRIES</h1>} {/* Ẩn thẻ h1 khi collapsed là true */}
+      </div>
+      <Menu
+        defaultSelectedKeys={['1']}
+        defaultOpenKeys={['sub1']}
+        mode="inline"
+        inlineCollapsed={collapsed}
+        items={items}
+        className="sidebar-menu"
+      />
+    </div>
   );
 };
 export default SidebarMenu;
