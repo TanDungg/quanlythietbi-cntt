@@ -17,9 +17,14 @@
     display: flex;
     align-items: center;
     padding: 20px 25px;
+    border-bottom: 2px solid #c8c8c8;
+}
+.icon-logo{
+    margin-right: 5px;
+    cursor: pointer;
 }
 .logo{
-    margin-right: 5px;
+    width: 200px;
     cursor: pointer;
 }
 .sidebar-menu{
@@ -37,8 +42,19 @@
     height: 10%;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 20px 25px;
+    border-bottom: 2px solid #c8c8c8;
 }
+.header-account{
+    display: flex;
+    align-items: center;
+    & .user-name{
+        margin: 10px 10px;
+    }
+}
+
+
 .main-content{
     height: 90%;
     background-color: #f8f8f8;
