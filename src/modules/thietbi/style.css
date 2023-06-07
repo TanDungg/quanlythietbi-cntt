@@ -46,7 +46,20 @@
     background-color: #fff;
     border-radius: 6px;
   }
-  .form-select{
+  .form-select {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .select-row {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .select-first{
+    margin: 20px;
+  }
+  .select-first .select{
     width: 250px;
     margin: 20px;
   }
