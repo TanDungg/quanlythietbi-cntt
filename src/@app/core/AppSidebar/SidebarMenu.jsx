@@ -36,6 +36,9 @@ const SidebarMenu = (props) => {
       openKeys={openKeys}
       onOpenChange={onOpenChange}
       className="sidebar-menu"
+      style={{
+        textAlign: 'left',
+      }}
       items={items}
     />
   );
